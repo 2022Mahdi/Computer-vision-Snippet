@@ -1,52 +1,49 @@
 import os
 import shutil
 
-
 labels = 'labels/'
 images = 'images/'
-os.makedirs("classes",exist_ok = True)
+os.makedirs("classes", exist_ok=True)
+
 def Classes():
-    "Find class names"
-    with open('classes.txt','r') as f:
+    """
+    Find class names from a text file and create corresponding directories.
+    
+    Returns:
+        list: A list of class names.
+    """
+    with open('classes.txt', 'r') as f:
         classes = f.read().split()
         f.close()
+
+    # Create directories for each class
     for cls in classes:
-                os.makedirs("classes/" + cls,exist_ok = True)
+        os.makedirs("classes/" + cls, exist_ok=True)
+
     return classes
 
-
-def Find(pathlabel,pathimage,classes):
+def Find(pathlabel, pathimage, classes):
+    """
+    Copy and remove each file to its own folder based on the class index.
     
-    "copy  & remove each file at own folder"
+    Args:
+        pathlabel (str): Path to the label file.
+        pathimage (str): Path to the image file.
+        classes (list): List of class names.
+    """
+    with open(pathlabel, 'r') as f:
+        predicted = f.read().split()
+        index = int(predicted)
+        f.close()
 
-    with open(pathlabel,'r') as f:
-            predicted = f.read().split()
-            index = int(predicted[0])
-            f.close()
-    
-    shutil.copy(pathlabel,f'{"classes/" + classes[index]}/')
+    # Copy and remove label file
+    shutil.copy(pathlabel, f'{"classes/" + classes[index]}/')
     os.remove(pathlabel)
-    
+
+    # Copy and remove image file
     if os.path.exists(pathimage):
-        
-        shutil.copy(pathimage,f'{"classes/" + classes[index]}/')
+        shutil.copy(pathimage, f'{"classes/" + classes[index]}/')
         os.remove(pathimage)
-
     else:
-        shutil.copy(pathimage.replace("jpeg","jpg"),f'{"classes/" + classes[index]}/')
-        os.remove(pathimage.replace("jpeg","jpg"))
-
-
-                            
-                            
-    
-for label in os.listdir(labels):
-    
-    classes = Classes()
-    pathlabel = "labels/" + label
-    pathimage = "images/" + label.replace("txt","jpeg")
-    Find(pathlabel,pathimage,classes)
-    print(label)
-
-os.rmdir("labels/")
-shutil.move("images/","classes/background")
+        shutil.copy(pathimage.replace("jpeg", "jpg"), f'{"classes/" + classes[index]}/')
+        os.remove(pathimage.replace("jpeg", "jpg"))
