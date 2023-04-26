@@ -1,16 +1,4 @@
-Some helpful tools to speed up your training:
+Some helpful Snippet to speed up your preprocessing data
 
-
-image classification:
-
-
-
-
-object detection:
-
-***convert cocodataset to custom classes >>> super easy to use
-description:
-use cococustom.py
-
-
-
+Object Detection snippet:
+  >>  Seperate_Each_Class_Detection.py : this part of code split your images and labels into seperate folder (own classes) 
