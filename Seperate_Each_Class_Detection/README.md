@@ -18,6 +18,3 @@
 
 <h2>Contributing</h2>
 <p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
-
-<h2>License</h2>
-<p>MIT License</p>
