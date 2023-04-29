@@ -12,4 +12,4 @@ while cap.isOpened():
     cv2.imwrite("Frames/frame%d.jpg" % count, frame)
     count = count + 1
     
-print("resualt saved to Frames")
+print("resualt saved to Frames/")
