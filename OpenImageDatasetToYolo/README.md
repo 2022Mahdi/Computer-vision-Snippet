@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Open Images to YOLO Converter</title>
   </head>
   <body>
     <h1>Open Images to YOLO Converter</h1>
