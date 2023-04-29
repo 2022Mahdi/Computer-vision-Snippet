@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Split Images and Labels</title>
+	
 </head>
 <body>
 	<h1>Split Images and Labels</h1>
