@@ -21,8 +21,7 @@
     Contributions are welcome! If you have a snippet that you think would be useful to others, please feel free to submit a pull request or open an issue to discuss your idea.
   </p>
   
-</body>
-</html>
+
 
 ## Todo
 
@@ -32,6 +31,9 @@
 
 <br>
 <div align="center">
-  <img src="linkdin.png" width="3%" alt="" />
   <a href="https://www.linkedin.com/in/mahdi-maarefdost" style="text-decoration:none;">
+  <img src="linkdin.png" width="3%" alt="" />
 </div>
+
+</body>
+</html>
