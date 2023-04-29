@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1>Computer Vision Snippets</h1>
+  <img src="imagefromdeepnorth.com.jpg" alt="">
   <p>
     This repository contains a collection of code snippets to automate common computer vision preprocessing tasks. These snippets can help you quickly preprocess your images and videos for various computer vision applications.
   </p>
