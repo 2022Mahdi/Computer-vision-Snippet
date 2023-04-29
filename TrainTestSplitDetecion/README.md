@@ -14,12 +14,9 @@
 	</ol>
 	<pre><code>pip install tqdm</code></pre>
 	<ol start="3">
-		<li>Place your images in the <code>images/</code> folder and your labels in the <code>labels/</code> folder.</li>
-		<li>Open the <code>split_images_and_labels.py</code> file and edit the <code>threshold</code> value as desired.</li>
+		<li>Place your images in the <code>images/</code> folder and your labels in the <code>labels/</code> folder.and <code>split_images_and_labels.py</code> next to it</li>
 		<li>Run the script using the following command:</li>
 	</ol>
 	<pre><code>python split_images_and_labels.py</code></pre>
-	<h2>License</h2>
-	<p>This project is licensed under the MIT License - see the <code>LICENSE</code> file for details.</p>
 </body>
 </html>
