@@ -19,11 +19,7 @@
   <p>
     Contributions are welcome! If you have a snippet that you think would be useful to others, please feel free to submit a pull request or open an issue to discuss your idea.
   </p>
-
-  <h2>License</h2>
-  <p>
-    This repository is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more information.
-  </p>
+  
 </body>
 </html>
 
