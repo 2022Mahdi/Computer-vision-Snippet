@@ -24,5 +24,5 @@ plt.bar(classes, counts)
 plt.xlabel('Class')
 plt.ylabel('Number of Instances')
 plt.title('Number of Instances per Class')
-plt.xticks(classes)  # Set the x-axis tick labels explicitly
+plt.xticks(classes)
 plt.show()
