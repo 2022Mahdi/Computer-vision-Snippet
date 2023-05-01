@@ -7,6 +7,7 @@
 <body>
   <h1>COUNT instance per class</h1>
   <p>This Python script reads all label files in a folder, gathers unique classes, and plots the number of instances per class.</p>
+  <img src="bar.jpg" alt="Resualt">
   <h2>Requirements</h2>
   <ul>
     <li>Python 3.x</li>
@@ -16,7 +17,7 @@
   <ol>
     <li>Install the required library: <code>pip install matplotlib</code></li>
     <li>Update the <code>label_folder</code> variable in the script with the path to your label folder.</li>
-    <li>Run the script: <code>python AnalyzeDataset.py</code></li>
+    <li>Run the script: <code>python plot_class_instances.py</code></li>
     <li>A bar plot will be displayed, showing the number of instances per class.</li>
   </ol>
 </body>
