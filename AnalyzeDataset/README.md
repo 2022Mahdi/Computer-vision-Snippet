@@ -16,7 +16,7 @@
   <ol>
     <li>Install the required library: <code>pip install matplotlib</code></li>
     <li>Update the <code>label_folder</code> variable in the script with the path to your label folder.</li>
-    <li>Run the script: <code>python plot_class_instances.py</code></li>
+    <li>Run the script: <code>python AnalyzeDataset.py</code></li>
     <li>A bar plot will be displayed, showing the number of instances per class.</li>
   </ol>
 </body>
