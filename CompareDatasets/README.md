@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>README - Duplicated Images Checker</title>
+  
 </head>
 <body>
   <h1>Duplicated Images Checker</h1>
   <p>This Python script checks for duplicated images or files in two datasets by comparing their hashes and deletes the duplicates from the new dataset.</p>
-
-  <h2>Requirements</h2>
-  <ul>
-    <li>Python 3.x</li>
-  </ul>
 
   <h2>Usage</h2>
   <ol>
