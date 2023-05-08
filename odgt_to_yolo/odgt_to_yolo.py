@@ -40,7 +40,12 @@ class_id = 0  # Assuming 'person' class has an ID of 0
 img_folder = "train/Images"
 odgt_to_yolo(odgt_file, output_folder, class_id, img_folder)
 
-#*******************************************************************************
-#Either execute the command below using the command line or remove the comment from the line below
-#cmd = "rename "s/\('(.*)', ''\)/\$1/" *"
-#os.system(cmd)
+
+
+for filename in os.listdir("train/labels"):
+    # Use a regular expression to match the pattern and extract the group
+    match = re.search(r"\('(.*)', ''\)", filename)
+    if match:
+        # Rename the file by removing the matched pattern
+        new_filename = match.group(1)
+        os.rename(filename, new_filename)
