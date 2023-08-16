@@ -2,15 +2,11 @@ import json
 from PIL import Image
 import os
 
-def sanitize_filename(filename):
-    return filename
-
 def odgt_to_yolo(odgt_file, output_folder, class_id, img_folder):
     with open(odgt_file, 'r') as infile:
         for line in infile:
             data = json.loads(line)
             image_id = data['ID']
-            sanitized_image_id = sanitize_filename(image_id)
             gtboxes = data['gtboxes']
 
             img_path = f"{img_folder}/{image_id}.jpg"
@@ -29,7 +25,7 @@ def odgt_to_yolo(odgt_file, output_folder, class_id, img_folder):
                     yolo_annotation = f"{class_id} {center_x} {center_y} {norm_w} {norm_h}"
                     yolo_annotations.append(yolo_annotation)
 
-            output_file = f"{output_folder}/{os.path.splitext(sanitized_image_id)}.txt"
+            output_file = f"{output_folder}/{os.path.splitext(filename)}.txt"
             with open(output_file, 'w') as outfile:
                 outfile.write("\n".join(yolo_annotations))
 
